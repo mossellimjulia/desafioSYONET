@@ -4,6 +4,29 @@ spring:
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: desafionewsletter@gmail.com
+    password: xkmu ysvk mgqa hbnt
+    protocol: smtp
+
+    properties:
+
+        mail:
+          mail.debug: true
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+
+
+  logging:
+     level:
+       org.springframework.mail: DEBUG
+       org.springframework.scheduling: DEBUG
+
+
   jpa:
     hibernate:
       ddl-auto: update
